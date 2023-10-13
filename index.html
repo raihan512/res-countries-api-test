@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+          <div class="container mx-auto mt-20">
+                    <div class="flex items-center border p-1">
+                              <input type="search" id="search-country"
+                                        class="w-8/12 sm:w-9/12 md:w-10/12 py-2 px-5 focus:outline-0"
+                                        placeholder="Search country">
+                              <label for="search-country"
+                                        class="w-4/12 sm:w-3/12 md:w-2/12 py-2 px-5 bg-cyan-500 text-white text-center cursor-pointer"
+                                        id="search-country-btn">Search</label>
+                    </div>
+          </div>
+
+
+          <div class="container mx-auto mt-20">
+                    <div class="flex flex-col sm:flex-row justify-between items-center" id="filter-area">
+                              <Select id="selected-region" class="border py-2 px-5 w-[200px]"> </Select>
+                              <Select id="selected-capital" class="border py-2 px-5 w-[200px]"> </Select>
+                              <Select id="selected-language" class="border py-2 px-5 w-[200px]"></Select>
+                    </div>
+          </div>
+
+          <div class="container mx-auto mt-20">
+                    <h1 class="text-2xl text-center font-bold mb-5" id="total"></h1>
+                    <div class="flex justify-between flex-wrap" id="country-container"></div>
+          </div>
+
+          <script src="script.js"></script>
+          <script src="utilities.js"></script>
+</body>
+
+</html>
